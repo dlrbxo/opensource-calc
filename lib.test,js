@@ -1,0 +1,25 @@
+const { test, expect } = require("@jest/globals");
+const lib = require("./lib");
+
+test("avg([4, 6, 8]) should be 6", () => {
+    expect(lib.avg([4, 6, 8])).toBe(6);
+});
+test("avg([-1, 1]) should be 0", () => {
+    expect(lib.avg([-1, 1])).toBe(0);
+});
+
+
+test("prime([17]) should be true", () => {
+    expect(lib.prime([17])).toBe(true);
+});
+test("prime([10]) should be false", () => {
+    expect(lib.prime([10])).toBe(false);
+});
+
+
+test("fact([5]) should be 120", () => {
+    expect(lib.fact([5])).toBe(120);
+});
+test("fact([16]) should be -1", () => {
+    expect(lib.fact([16])).toBe(-1);
+});
